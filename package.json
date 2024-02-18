@@ -1,0 +1,41 @@
+{
+  "name": "in-your-coin-api-node",
+  "version": "1.0.0",
+  "description": "API REST to handle the data management for the In Your Coin platform.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.mjs",
+    "dev": "SET NODE_ENV=dev && npx nodemon server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exagonsoft/In-Your-Coin-API-NODE.git"
+  },
+  "keywords": [
+    "NODE",
+    "CURENCY",
+    "EXCHANGE"
+  ],
+  "author": "Alvaro R. Martin Peraza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exagonsoft/In-Your-Coin-API-NODE/issues"
+  },
+  "homepage": "https://github.com/exagonsoft/In-Your-Coin-API-NODE#readme",
+  "dependencies": {
+    "@prisma/client": "^5.9.1",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prisma": "^5.9.1"
+  }
+}
