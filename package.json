@@ -7,7 +7,7 @@
   "scripts": {
     "build": "ncp src public",
     "test": "jest",
-    "start": "node src/server.mjs",
+    "start": "node public/server.mjs",
     "dev": "SET NODE_ENV=dev && npx nodemon src/server.mjs",
     "serve": "node public/server.mjs"
   },
