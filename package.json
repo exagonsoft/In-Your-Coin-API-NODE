@@ -5,9 +5,10 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "build": "babel src -d public",
     "test": "jest",
-    "start": "node server.mjs",
-    "dev": "SET NODE_ENV=dev && npx nodemon server.mjs"
+    "start": "node src/server.mjs",
+    "dev": "SET NODE_ENV=dev && npx nodemon src/server.mjs"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "nodemon": "^3.0.3",
     "prisma": "^5.9.1"
   }
